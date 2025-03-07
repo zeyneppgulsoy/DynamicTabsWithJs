@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablist with Sliders and Text</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tablist">
+        <button id="tab1-button" onclick="showTab('tab1-content')">London</button> 
+        <button id="tab2-button" onclick="showTab('tab2-content')">Paris</button> 
+        <button id="tab3-button" onclick="showTab('tab3-content')">Tokyo</button> 
+    </div>
+    
+<!--This part slider and text content-->
+    <div id="tab1-content" class="tab-content">
+        <!-- For London -->
+        <p>Some pictures from London</p>
+        <!-- London Slider -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/London.jpg"></div> 
+                <div class="swiper-slide"><img src="assets/London1.jpg"></div> 
+                <div class="swiper-slide"><img src="assets/London3.jpg"></div> 
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div> 
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div> 
+            <div class="swiper-button-prev"></div> <!--This section is previous button-->
+        </div>
+    </div>
+    <div id="tab2-content" class="tab-content">
+        <!--For Paris -->
+        <p>Some pictures from Paris</p>
+        <!-- Paris Slider -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/building-paris.jpg"></div> 
+                <div class="swiper-slide"><img src="assets/eiffel-tower-paris.jpg"></div> 
+                <div class="swiper-slide"><img src="assets/paris.jpg"></div> 
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div> 
+            <div class="swiper-button-prev"></div> 
+        </div>
+    </div>
+
+    <div id="tab3-content" class="tab-content">
+        <!-- For tokyo -->
+        <p>Some pictures from Tokyo</p>
+        <!-- Tokyo Slider -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/city-tokyo.jpg"></div> 
+                <div class="swiper-slide"><img src="assets/tokyo.jpg"></div> 
+                <div class="swiper-slide"><img src="assets/tokyo2.jpg"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+
+   
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> 
+    <script src="script.js"></script>
+</body>
+</html>
